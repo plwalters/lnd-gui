@@ -1,0 +1,23 @@
+{
+  "name": "lnd-gui",
+  "version": "0.0.1",
+  "description": "A GUI for alternative to LND",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PWKad/lnd-gui.git"
+  },
+  "keywords": [
+    "lnd",
+    "aurelia"
+  ],
+  "author": "Patrick Walters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PWKad/lnd-gui/issues"
+  },
+  "homepage": "https://github.com/PWKad/lnd-gui#readme"
+}
