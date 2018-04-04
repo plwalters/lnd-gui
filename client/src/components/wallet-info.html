@@ -1,0 +1,37 @@
+<template>
+  <require from="components/display-item"></require>
+  <h2>Wallet Info</h2>
+  <display-item
+    label="chain_balance"
+    value.bind="balance.chain_balance"></display-item>
+  <display-item
+    label="channel_balance"
+    value.bind="balance.channel_balance"></display-item>
+  <display-item
+    label="pending_chain_balance"
+    value.bind="balance.pending_chain_balance"></display-item>
+  <display-item
+    label="pending_channel_balance"
+    value.bind="balance.pending_channel_balance"></display-item>
+  <display-item
+    label="active_channels_count"
+    value.bind="value.active_channels_count"></display-item>
+  <display-item
+    label="block_height"
+    value.bind="value.block_height"></display-item>
+  <display-item
+    label="is_testnet"
+    value.bind="value.is_testnet"></display-item>
+  <display-item
+    label="peers_count"
+    value.bind="value.peers_count"></display-item>
+  <display-item
+    label="pending_channels_count"
+    value.bind="value.pending_channels_count"></display-item>
+  <display-item
+    label="public_key"
+    value.bind="value.public_key"></display-item>
+  <display-item
+    label="type"
+    value.bind="value.type"></display-item>
+</template>

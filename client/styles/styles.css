@@ -1,5 +1,10 @@
+main {
+  top: 70px;
+}
+
 body {
   margin: 0;
+  padding-top: 5rem;
 }
 
 .splash {
@@ -172,4 +177,8 @@ div.au-stagger {
   100% {
     opacity: 1;
   }
+}
+
+.card-header {
+  cursor: pointer;
 }
