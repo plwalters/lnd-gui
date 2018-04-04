@@ -7,7 +7,7 @@ export class ChannelsService {
     this.http = http;
   }
 
-  getInfo() {
+  getChannels() {
     return this.http.get('/channels').then(result => {
       return result.channels.map(item => {
         return new Channel(item);
