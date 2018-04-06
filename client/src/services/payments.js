@@ -7,10 +7,10 @@ export class PaymentsService {
     this.http = http;
   }
 
-  payInvoice() {
-    return this.http.post('/invoices').then(result => {
+  payInvoice(payment) {
+    return this.http.post('/invoices', payment).then(result => {
       return result.invoices.map(item => {
-        return new Invoice(item);
+        return new Payment(item);
       });
     });
   }

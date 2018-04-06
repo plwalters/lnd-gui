@@ -1,6 +1,6 @@
 import {AddressesService} from 'services/addresses';
 
-export class AddressesList {
+export class GetAddress {
   newAddress;
 
   static inject = [AddressesService];
@@ -8,14 +8,9 @@ export class AddressesList {
     this.addressesService = addressesService;
   }
 
-  createAddress($event) {
-    this.addressesService.createAddress().then(result => {
+  createAddress() {
+    return this.addressesService.createAddress().then(result => {
       this.newAddress = result;
     });
-    return this.noBubble($event);
-  }
-  noBubble($event) {
-    $event.stopPropagation();
-    return false;
   }
 }
