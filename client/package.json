@@ -21,7 +21,7 @@
   "scripts": {
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e",
-    "postinstall": "npm install && jspm install && gulp bundle"
+    "postinstall": "jspm install && gulp bundle"
   },
   "devDependencies": {
     "aurelia-bundler": "^0.4.0",

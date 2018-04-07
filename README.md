@@ -1,6 +1,10 @@
 # LND-GUI
 
+**NOTE: This package is currently in early development.  The commands on this page and this package should only be used by users who understand what they are installing and how to run local packages from the terminal / command line**
+
 Providing a simple user interface on top of the `lnd` gRPC methods.  Barebones project not meant to function as a wallet with good UX, just provide a basic user interface to replicate the `lncli`
+
+**Issues** are found in the issues tab in the GitHub repo.
 
 ## Overview
 
@@ -18,16 +22,30 @@ The project makes HTTP calls to the `ln-service` project, running as a node.js R
 
 - node and npm (Project verified on node@8.9.1 and npm@5.5.1)
 
+**Until an official release is available please make sure to have some additional build tooling available on your command line**
+
+- [gulp](https://github.com/gulpjs/gulp) - Build tooling for client-side app
+- [jspm](https://github.com/gulpjs/jspm) - Package manager for client-side app
+
+These can be installed globally as such, from any directory -
+
+```
+$ npm install gulp -g
+$ npm install jspm -g
+```
+
 ## Installation
 
-For now there are no distributions available and this package must be `git clone`d or installed via npm.
+For now there are no distributions available and this package must be `git clone`d.
 
 ### Git
 
 Obviously, ensure you have git installed before attempting this.
 
 ```
-
+$ git clone https://github.com/PWKad/lnd-gui.git
+$ cd lnd-gui
+$ npm install
 ```
 
 ## Running the app

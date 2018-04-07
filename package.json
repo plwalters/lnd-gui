@@ -1,10 +1,10 @@
 {
   "name": "lnd-gui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A GUI for alternative to LND",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run client\" \"npm run ln-service\"",
+    "dev": "concurrently \"npm run dev-client\" \"npm run ln-service\"",
     "start": "concurrently \"npm run client\" \"npm run ln-service\"",
     "client": "cd ./client && gulp serve-bundle",
     "dev-client": "cd ./client && gulp watch",
