@@ -48,6 +48,12 @@ $ cd lnd-gui
 $ npm install
 ```
 
+### Configuring ln-service
+
+ln-service requires a few environment variables to run.  You can see a list of them in the following link  -
+
+[Configuring Environment Variables](https://github.com/alexbosworth/ln-service/#configuring-environment-variables)
+
 ## Running the app
 
 The most simple way to run the app is using the native `http-server` package.
