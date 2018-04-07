@@ -4,7 +4,12 @@
   "description": "A GUI for alternative to LND",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "concurrently \"npm run client\" \"npm run ln-service\"",
+    "start": "concurrently \"npm run client\" \"npm run ln-service\"",
+    "client": "cd ./client && gulp serve-bundle",
+    "dev-client": "cd ./client && gulp watch",
+    "ln-service": " cd ./node_modules/ln-service && npm start",
+    "postinstall": "cd ./client && npm install"
   },
   "repository": {
     "type": "git",
@@ -12,12 +17,17 @@
   },
   "keywords": [
     "lnd",
-    "aurelia"
+    "aurelia",
+    "ln-service"
   ],
   "author": "Patrick Walters",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PWKad/lnd-gui/issues"
   },
-  "homepage": "https://github.com/PWKad/lnd-gui#readme"
+  "homepage": "https://github.com/PWKad/lnd-gui#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "ln-service": "^2.0.1"
+  }
 }
