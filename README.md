@@ -56,12 +56,13 @@ ln-service requires a few environment variables to run.  You can see a list of t
 
 ## Running the app
 
-The most simple way to run the app is using the native `http-server` package.
+From the root of the project directory
 
-From the root of the project directory ()
 ```
-$ cd
+$ npm start
 ```
+
+This will run the client and start the `ln-service` as well.
 
 ## Credits
 
